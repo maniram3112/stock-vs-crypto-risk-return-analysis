@@ -1,1 +1,1 @@
-Risk-Return-Stocks-vs-Crypto
+stock-vs-crypto-risk-return-analysis

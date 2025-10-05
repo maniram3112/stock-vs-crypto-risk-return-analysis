@@ -6,7 +6,7 @@ This repository contains a comprehensive analysis of multiple financial assets, 
 
 The main objective is to explore **price trends, returns, volatility, risk, correlations, and monthly patterns** to understand asset performance and diversification potential.
 
-The analysis is implemented using **Python** with libraries such as `pandas`, `matplotlib`, and `seaborn`. The project is modular, with data collection, cleaning, exploration, and risk-return analysis organized in separate notebooks.
+The analysis is implemented using **Python** with libraries such as `pandas`, `matplotlib`, and `seaborn`. Data collection is performed using **yfinance** for stocks and **CryptoCompare API** for cryptocurrencies. The project is modular, with data collection, cleaning, exploration, and risk-return analysis organized in separate notebooks.
 
 ---
 
@@ -56,7 +56,7 @@ financial-analysis/
 
 | Notebook                          | Description                                                                                                                                                 |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `data_collection.ipynb`           | Collects historical price data for all assets (cryptos, US stocks, Indian stocks).                                                                          |
+| `data_collection.ipynb`           | Collects historical price data for all assets using **yfinance** for stocks and **CryptoCompare API** for cryptocurrencies.                                 |
 | `data_cleaning.ipynb`             | Cleans, formats, and reshapes raw data into pivot/wide format.                                                                                              |
 | `exploratory_data_analysis.ipynb` | Performs basic EDA: summary statistics, distributions, and missing value analysis.                                                                          |
 | `risk_return_analysis.ipynb`      | Calculates daily returns, volatility, cumulative returns, drawdowns, Sharpe ratios, and generates visualizations.                                           |
@@ -78,7 +78,7 @@ financial-analysis/
    | ---------- | ----- | ---- | ---- | ---- | ---- | --- |
    | 2024-01-01 | 17000 | 1200 | 0.35 | 180  | 130  | ... |
 
-2. **Long Format (Used in ****************************************************`stock_vs_crypto_analysis.ipynb`****************************************************)**
+2. **Long Format (Used in `stock_vs_crypto_analysis.ipynb` )**
 
    * Columns: `time`, `Ticker`, `Close`, `Return`, `Year`, `Month`
    * Enables per-asset operations, cumulative returns, and monthly heatmaps.
@@ -136,6 +136,17 @@ financial-analysis/
 
 ---
 
+## Usage
+
+1. Run `data_collection.ipynb` to fetch updated datasets using **yfinance** for stocks and **CryptoCompare API** for cryptocurrencies.
+2. Clean and reshape raw data using `data_cleaning.ipynb`.
+3. Explore distributions and summary statistics using `exploratory_data_analysis.ipynb`.
+4. Analyze risk, returns, and generate plots with `risk_return_analysis.ipynb`.
+5. Use `stock_vs_crypto_analysis.ipynb` for **long-format analysis**, including monthly heatmaps and per-asset cumulative returns.
+6. All plots and CSV outputs are saved in `results/risk_return_analysis/`.
+
+---
+
 ## Key Financial Terms
 
 * **Closing Price:** Last traded price for the day.
@@ -146,17 +157,6 @@ financial-analysis/
 * **Sharpe Ratio:** Risk-adjusted return.
 * **Correlation:** Relationship between asset returns.
 * **Rolling Statistics:** Metrics over a moving window (e.g., 90-day volatility).
-
----
-
-## Usage
-
-1. Run `data_collection.ipynb` to fetch updated datasets.
-2. Clean and reshape raw data using `data_cleaning.ipynb`.
-3. Explore distributions and summary statistics using `exploratory_data_analysis.ipynb`.
-4. Analyze risk, returns, and generate plots with `risk_return_analysis.ipynb`.
-5. Use `stock_vs_crypto_analysis.ipynb` for **long-format analysis**, including monthly heatmaps and per-asset cumulative returns.
-6. All plots and CSV outputs are saved in `results/risk_return_analysis/`.
 
 ---
 

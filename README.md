@@ -28,7 +28,7 @@ stock-vs-crypto-risk-return-analysis/
 │   ├── data_cleaning.ipynb.ipynb
 │   ├── data_collection.ipynb
 │   ├── exploratory_data_analysis.ipynb
-│   ├── risk_return_analysis.ipynb
+│   ├── analysis.ipynb
 │   └── stock_vs_crypto_analysis.ipynb
 ├── results/
 │   ├── risk_return_analysis/

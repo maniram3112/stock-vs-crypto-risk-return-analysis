@@ -13,7 +13,7 @@ The analysis is implemented using **Python** with libraries such as `pandas`, `m
 ## Repository Structure
 
 ```
-financial-analysis/
+stock-vs-crypto-risk-return-analysis/
 ├── data/
 │   ├── Raw_Data/
 │   │   ├── raw_crypto.csv
